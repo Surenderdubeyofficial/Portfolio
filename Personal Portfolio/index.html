@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(16, 16, 46);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            color: rgb(89, 89, 234);
+            font-size: 1.0rem;
+        }
+        .left {
+            font-size: large;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+        .firstsection div {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .leftsection .btn {
+            padding: 12px 24px;
+            border: 2px solid;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightsection > img {
+            max-width: 100%;
+            height: auto;
+        }
+        .secondsection {
+            padding: 40px 20px;
+        }
+        .secondsection h1 {
+            font-size: 1.9rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .vertical {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .vertical img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+        .vertical-title {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        .vertical-desc {
+            color: grey;
+            font-size: 0.8rem;
+        }
+        .skills {
+            background-color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .skills h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .skills-item {
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: purple;
+            color: gray;
+            padding: 20px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .footer ul {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer ul li {
+            margin: 0 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Surender Dubey Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I'm <span class="purple">Surender Dubey</span>, a passionate web developer.
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="window.location.href='/Portfolio/Personal%20Portfolio/index.html'">Download Resume</button>
+
+
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="download.jpeg">
+            </div>
+        </section>
+        <hr>
+        <div class="secondsection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="download (2).png" alt="">
+                    <div class="vertical-title">Web Developer (2018-Present)</div>
+                    <div class="vertical-desc">Developed and maintained web applications using HTML, CSS, JavaScript, and React.js.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download (2).png" alt="">
+                    <div class="vertical-title">Software Engineer (2016-2018)</div>
+                    <div class="vertical-desc">Designed and implemented scalable software solutions utilizing Node.js and MySQL.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download (2).png" alt="">
+                    <div class="vertical-title">Frontend Developer (2014-2016)</div>
+                    <div class="vertical-desc">Collaborated with designers to implement user-friendly interfaces and experiences.</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skills-item">HTML</div>
+                <div class="skills-item">CSS</div>
+                <div class="skills-item">JavaScript</div>
+                <div class="skills-item">React.js</div>
+                <div class="skills-item">Node.js</div>
+                <div class="skills-item">MySQL</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="footer-rights">
+            Copyright &copy; 2024 www.Surenderdubey.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Software Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
